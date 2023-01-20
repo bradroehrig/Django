@@ -16,8 +16,6 @@ class AuthorSerializer(serializers.ModelSerializer):
         model = Author
         fields = ['id', 'name', 'surname']
 
-
-
 class BookSerializer(serializers.ModelSerializer):
     number = BookNumberSerializer(many=False)
     characters = CharacterSerializer(many=True)
